@@ -4,32 +4,26 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Études statistiques | A Minimal Book Example</title>
-  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  <title>1 Études statistiques | La tarification a priori</title>
+  <meta name="description" content="Projet de tarification a priori" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Études statistiques | A Minimal Book Example" />
+  <meta property="og:title" content="1 Études statistiques | La tarification a priori" />
   <meta property="og:type" content="book" />
-  
-  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
+  <meta property="og:image" content="https://bookdown.org/abdouloudoussdiakite/Tarification/logo.png" />
+  <meta property="og:description" content="Projet de tarification a priori" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Études statistiques | A Minimal Book Example" />
+  <meta name="twitter:title" content="1 Études statistiques | La tarification a priori" />
   
-  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
-The HTML output format for this example is bookdown::gitbook,
-set in the _output.yml file.</p>" />
-  
+  <meta name="twitter:description" content="Projet de tarification a priori" />
+  <meta name="twitter:image" content="https://bookdown.org/abdouloudoussdiakite/Tarification/logo.png" />
 
-<meta name="author" content="John Doe" />
+<meta name="author" content="Abdoul Oudouss DIAKITE, Othmane ETTADLAOUI" />
 
 
-<meta name="date" content="2022-05-19" />
+<meta name="date" content="2022-06-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -37,7 +31,7 @@ set in the _output.yml file.</p>" />
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="représentations-graphiques.html"/>
+<link rel="next" href="les-modèles-linéaires-généralisés.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -125,28 +119,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -161,7 +133,7 @@ div.csl-indent {
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">La tarification a priori</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
@@ -172,31 +144,20 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="1" data-path="etudestats.html"><a href="etudestats.html"><i class="fa fa-check"></i><b>1</b> Études statistiques</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="etudestats.html"><a href="etudestats.html#tests-statistiques"><i class="fa fa-check"></i><b>1.1</b> Tests statistiques</a>
+<li class="chapter" data-level="1.1" data-path="etudestats.html"><a href="etudestats.html#nettoyage-des-données"><i class="fa fa-check"></i><b>1.1</b> Nettoyage des données</a></li>
+<li class="chapter" data-level="1.2" data-path="etudestats.html"><a href="etudestats.html#représentations-graphiques"><i class="fa fa-check"></i><b>1.2</b> Représentations graphiques</a></li>
+<li class="chapter" data-level="1.3" data-path="etudestats.html"><a href="etudestats.html#tests-statistiques"><i class="fa fa-check"></i><b>1.3</b> Tests statistiques</a>
 <ul>
-<li class="chapter" data-level="1.1.1" data-path="etudestats.html"><a href="etudestats.html#tests-dadéquation"><i class="fa fa-check"></i><b>1.1.1</b> Tests d’adéquation</a></li>
+<li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#nombre-de-sinistres"><i class="fa fa-check"></i>Nombre de sinistres</a></li>
+<li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#charges-de-sinistres"><i class="fa fa-check"></i>Charges de sinistres</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="représentations-graphiques.html"><a href="représentations-graphiques.html"><i class="fa fa-check"></i><b>2</b> Représentations graphiques</a></li>
-<li class="chapter" data-level="3" data-path="parts.html"><a href="parts.html"><i class="fa fa-check"></i><b>3</b> Parts</a></li>
-<li class="chapter" data-level="4" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html"><i class="fa fa-check"></i><b>4</b> Footnotes and citations</a>
+<li class="chapter" data-level="2" data-path="les-modèles-linéaires-généralisés.html"><a href="les-modèles-linéaires-généralisés.html"><i class="fa fa-check"></i><b>2</b> Les modèles linéaires généralisés</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#footnotes"><i class="fa fa-check"></i><b>4.1</b> Footnotes</a></li>
-<li class="chapter" data-level="4.2" data-path="footnotes-and-citations.html"><a href="footnotes-and-citations.html#citations"><i class="fa fa-check"></i><b>4.2</b> Citations</a></li>
+<li class="chapter" data-level="" data-path="les-modèles-linéaires-généralisés.html"><a href="les-modèles-linéaires-généralisés.html#régression-logistique-ou-probit"><i class="fa fa-check"></i>Régression logistique ou probit</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="blocks.html"><a href="blocks.html"><i class="fa fa-check"></i><b>5</b> Blocks</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="blocks.html"><a href="blocks.html#equations"><i class="fa fa-check"></i><b>5.1</b> Equations</a></li>
-<li class="chapter" data-level="5.2" data-path="blocks.html"><a href="blocks.html#theorems-and-proofs"><i class="fa fa-check"></i><b>5.2</b> Theorems and proofs</a></li>
-<li class="chapter" data-level="5.3" data-path="blocks.html"><a href="blocks.html#callout-blocks"><i class="fa fa-check"></i><b>5.3</b> Callout blocks</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="sharing-your-book.html"><a href="sharing-your-book.html"><i class="fa fa-check"></i><b>6</b> Sharing your book</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="sharing-your-book.html"><a href="sharing-your-book.html#publishing"><i class="fa fa-check"></i><b>6.1</b> Publishing</a></li>
-<li class="chapter" data-level="6.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>6.2</b> 404 pages</a></li>
-<li class="chapter" data-level="6.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>6.3</b> Metadata for sharing</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="3" data-path="modèle-collectif.html"><a href="modèle-collectif.html"><i class="fa fa-check"></i><b>3</b> Modèle collectif</a></li>
+<li class="chapter" data-level="" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i>Conclusion</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -209,7 +170,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">La tarification a priori</a>
           </h1>
         </div>
 
@@ -218,68 +179,182 @@ div.csl-indent {
 
             <section class="normal" id="section-">
 <div id="etudestats" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Études statistiques<a href="etudestats.html#etudestats" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Cette partie de ce document sera consacrée à l’étude statistique de notre jeu de données.
-Pour commencer nous allons calculer la somme totale des sinistres par police.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="etudestats.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
-<span id="cb2-2"><a href="etudestats.html#cb2-2" aria-hidden="true" tabindex="-1"></a>database <span class="ot">&lt;-</span> <span class="fu">read_sas</span>(<span class="st">&quot;Data/base5.sas7bdat&quot;</span>, </span>
-<span id="cb2-3"><a href="etudestats.html#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cn">NULL</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="etudestats.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-2"><a href="etudestats.html#cb3-2" aria-hidden="true" tabindex="-1"></a>database<span class="sc">$</span>SumSINAPS <span class="ot">&lt;-</span> database <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">&quot;SINAP&quot;</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-3"><a href="etudestats.html#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">apply</span>(., <span class="dv">1</span>, sum)</span></code></pre></div>
-<p>Nous venons de créer avec le code précédent une nouvelle colonne dans la base de données <code>data</code> que nous avons appelé <code>SumSINAPS</code>.
-On peut facilement faire un sommaire de la somme des sinistres avec la fonction <code>summary</code> afin de connaître les mesures de tendance de cette variable.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="etudestats.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(database<span class="sc">$</span>SumSINAPS)</span></code></pre></div>
-<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-##   0.000   0.000   1.000   1.385   2.000  12.000</code></pre>
-<div id="tests-statistiques" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Tests statistiques<a href="etudestats.html#tests-statistiques" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Nous allons faire des testes statistiques histoire de connaître quelle loi suit la somme totale des sinistres <code>SumSINAPS</code></p>
-<div id="tests-dadéquation" class="section level3 hasAnchor" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> Tests d’adéquation<a href="etudestats.html#tests-dadéquation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Les tests d’adéquation servent à tester si un échantillon est distribué selon une loi
-de probabilité donnée. Ils permettent de décider, avec un seuil d’erreur <span class="math inline">\(\alpha\)</span> spécifié, si les écarts présentés par l’échantillon par rapport aux valeurs théoriques attendues sont dûs au hasard ou sont au contraire significatifs.<br />
-Pour faire les tests, nous allons générer une variable aléatoire <span class="math inline">\(X\)</span> suivant une loi choisie, puis tester si la somme totale des sinistres <code>SumSINAPS</code> est de même loi.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="etudestats.html#cb6-1" aria-hidden="true" tabindex="-1"></a>SumSINAPS <span class="ot">&lt;-</span> database<span class="sc">$</span>SumSINAPS</span></code></pre></div>
-<div id="loi-de-poisson" class="section level4 hasAnchor" number="1.1.1.1">
-<h4><span class="header-section-number">1.1.1.1</span> Loi de poisson<a href="etudestats.html#loi-de-poisson" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<h1><span class="header-section-number">1</span> Études statistiques<a href="etudestats.html#etudestats" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="nettoyage-des-données" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Nettoyage des données<a href="etudestats.html#nettoyage-des-données" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Cette partie de ce document sera consacrée à l’étude statistique de notre jeu de données.<br />
+Il existe quelques incohérences au niveau des données telles que des charges négatives ou nulles pour des nombres de sinistres positifs et des nombres de sinistres nuls pour des charges positives.
+Nous avons donc choisi de remplacer par 0 toutes les charges négatives pour des sinistres nuls, tous les nombres de sinistres positifs pour des charges nulles et par la valeur absolue des charges pour les nombre de sinistres positifs.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="etudestats.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-2"><a href="etudestats.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Ajout de la somme des sinistres par police</span></span>
+<span id="cb1-3"><a href="etudestats.html#cb1-3" aria-hidden="true" tabindex="-1"></a>database<span class="sc">$</span>SumSINAPS <span class="ot">&lt;-</span> database <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">&quot;SINAP&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-4"><a href="etudestats.html#cb1-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="fu">apply</span>(., <span class="dv">1</span>, sum)</span>
+<span id="cb1-5"><a href="etudestats.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Transformation des données</span></span>
+<span id="cb1-6"><a href="etudestats.html#cb1-6" aria-hidden="true" tabindex="-1"></a>database <span class="ot">&lt;-</span>  database <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">SumSINAPS =</span> <span class="fu">case_when</span>(CHARGE<span class="sc">==</span><span class="dv">0</span><span class="sc">~</span><span class="dv">0</span>,</span>
+<span id="cb1-7"><a href="etudestats.html#cb1-7" aria-hidden="true" tabindex="-1"></a>                                            <span class="cn">TRUE</span><span class="sc">~</span>SumSINAPS)) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-8"><a href="etudestats.html#cb1-8" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">mutate</span>(<span class="at">CHARGE =</span> <span class="fu">case_when</span>(SumSINAPS<span class="sc">==</span><span class="dv">0</span><span class="sc">~</span><span class="dv">0</span>,</span>
+<span id="cb1-9"><a href="etudestats.html#cb1-9" aria-hidden="true" tabindex="-1"></a>                                                 SumSINAPS<span class="sc">&gt;</span><span class="dv">0</span><span class="sc">~</span><span class="fu">abs</span>(CHARGE),</span>
+<span id="cb1-10"><a href="etudestats.html#cb1-10" aria-hidden="true" tabindex="-1"></a>                                                 <span class="cn">TRUE</span><span class="sc">~</span><span class="dv">0</span>))</span></code></pre></div>
+<p>Nous venons de créer avec le code précédent une nouvelle colonne dans la base de données <code>database</code> que nous avons appelé <code>SumSINAPS</code>.
+On peut facilement faire un sommaire de la somme des sinistres ainsi que des charges avec la fonction <code>summary</code> afin de connaître les mesures de tendance de cette variable.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="etudestats.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(database[,<span class="fu">c</span>(<span class="st">&quot;CHARGE&quot;</span>,<span class="st">&quot;SumSINAPS&quot;</span>)])</span></code></pre></div>
+<pre><code>##      CHARGE          SumSINAPS     
+##  Min.   :    0.0   Min.   : 0.000  
+##  1st Qu.:    0.0   1st Qu.: 0.000  
+##  Median :    0.0   Median : 0.000  
+##  Mean   :  170.1   Mean   : 0.169  
+##  3rd Qu.:    0.0   3rd Qu.: 0.000  
+##  Max.   :95151.0   Max.   :10.000</code></pre>
+</div>
+<div id="représentations-graphiques" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Représentations graphiques<a href="etudestats.html#représentations-graphiques" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Dans cette partie du projet, nous allons effectuer un ensemble de représentations graphiques afin de savoir l’impact des variables sur les sinistres.<br />
+Ces graphes suivants indiquent la fréquence des sinistre en fonction des différentes variables : sexe, zone, catégorie socio-professionnelle, age, usage du véhicule et statut matrimonial.<br />
+</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="etudestats.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-2"><a href="etudestats.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb4-3"><a href="etudestats.html#cb4-3" aria-hidden="true" tabindex="-1"></a>B1 <span class="ot">=</span> database <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="at">SEXE =</span> SEX,STATUT,ZONE,CSP,USAGE,AGECOND) <span class="co">#selection des variables.</span></span>
+<span id="cb4-4"><a href="etudestats.html#cb4-4" aria-hidden="true" tabindex="-1"></a>plot_ <span class="ot">&lt;-</span> <span class="cf">function</span>(df, N){</span>
+<span id="cb4-5"><a href="etudestats.html#cb4-5" aria-hidden="true" tabindex="-1"></a>  name <span class="ot">=</span> <span class="fu">names</span>(df)</span>
+<span id="cb4-6"><a href="etudestats.html#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> name){</span>
+<span id="cb4-7"><a href="etudestats.html#cb4-7" aria-hidden="true" tabindex="-1"></a>    df0 <span class="ot">&lt;-</span>  <span class="fu">data.frame</span>(df[[i]],N) <span class="co"># Creation d&#39;une df(Variables,N)</span></span>
+<span id="cb4-8"><a href="etudestats.html#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">colnames</span>(df0) <span class="ot">&lt;-</span> <span class="fu">c</span>(i,<span class="st">&#39;N&#39;</span>)</span>
+<span id="cb4-9"><a href="etudestats.html#cb4-9" aria-hidden="true" tabindex="-1"></a>    s <span class="ot">&lt;-</span> df0 <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(<span class="at">valeur =</span> df0[[i]]) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-10"><a href="etudestats.html#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">summarise</span>(<span class="at">total =</span> <span class="fu">sum</span>(N)) <span class="co"># Creation d&#39;une df(groupe de Variables, Total)</span></span>
+<span id="cb4-11"><a href="etudestats.html#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">assign</span>(<span class="fu">paste0</span>(<span class="st">&quot;table&quot;</span>,i),s,.GlobalEnv)</span>
+<span id="cb4-12"><a href="etudestats.html#cb4-12" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-13"><a href="etudestats.html#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># debut du code pour la figure</span></span>
+<span id="cb4-14"><a href="etudestats.html#cb4-14" aria-hidden="true" tabindex="-1"></a>    figure <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> s, <span class="fu">aes</span>(<span class="at">x =</span> valeur, <span class="at">y =</span> total<span class="sc">/</span><span class="fu">sum</span>(total))) <span class="sc">+</span></span>
+<span id="cb4-15"><a href="etudestats.html#cb4-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb4-16"><a href="etudestats.html#cb4-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xlab</span>(i) <span class="sc">+</span>  <span class="co"># Ajout du label de x</span></span>
+<span id="cb4-17"><a href="etudestats.html#cb4-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">ylab</span>(<span class="fu">paste0</span>(<span class="st">&quot;Frequence &quot;</span>,i)) <span class="sc">+</span> <span class="co"># Ajout du label de y</span></span>
+<span id="cb4-18"><a href="etudestats.html#cb4-18" aria-hidden="true" tabindex="-1"></a>      hrbrthemes<span class="sc">::</span><span class="fu">theme_ipsum</span>(<span class="at">grid =</span> <span class="st">&quot;Y&quot;</span>) <span class="co"># Ajout d&#39;un theme pour la figure</span></span>
+<span id="cb4-19"><a href="etudestats.html#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="co"># fin du code pour la figure</span></span>
+<span id="cb4-20"><a href="etudestats.html#cb4-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-21"><a href="etudestats.html#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="fu">assign</span>(<span class="fu">paste0</span>(<span class="st">&quot;fig&quot;</span>,i),figure,.GlobalEnv) <span class="co">#assigantion de la figure i </span></span>
+<span id="cb4-22"><a href="etudestats.html#cb4-22" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-23"><a href="etudestats.html#cb4-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-24"><a href="etudestats.html#cb4-24" aria-hidden="true" tabindex="-1"></a>SumSINAPS<span class="ot">=</span>database<span class="sc">$</span>SumSINAPS</span>
+<span id="cb4-25"><a href="etudestats.html#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_</span>(B1,SumSINAPS) <span class="co"># Execution de la fonction precedente</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="etudestats.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(patchwork)</span>
+<span id="cb5-2"><a href="etudestats.html#cb5-2" aria-hidden="true" tabindex="-1"></a>(figSEXE<span class="sc">|</span>figUSAGE)<span class="sc">/</span>figAGECOND</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="etudestats.html#cb6-1" aria-hidden="true" tabindex="-1"></a>(figSTATUT<span class="sc">|</span>figZONE)<span class="sc">/</span>figCSP</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>On constate que pour la variable <code>SEX</code> la fréquence des sinistres des hommes(M) est plus que le double de celle des femmes(F).<br />
+Les clients du type d’usage de véhicule <span class="math inline">\(2\)</span> ont les fréquences les plus élevées de sinistres, suivit dans cet ordre par les usages <span class="math inline">\(1\)</span>,<span class="math inline">\(3\)</span> et <span class="math inline">\(4\)</span>.<br />
+Les conducteurs de statut <em>A</em> ont une fréquence de sinistre à peu près cinq fois plus élevées que celle des conducteurs de statut <em>C</em>.<br />
+On peut utiliser ce même raisonnement pour interpréter tous les autres graphes.</p>
+</div>
+<div id="tests-statistiques" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Tests statistiques<a href="etudestats.html#tests-statistiques" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Nous allons faire des tests statistiques histoire de connaître quelle loi suit la somme totale des sinistres <code>SumSINAPS</code>.
+Les tests d’adéquation servent à tester si un échantillon est distribué selon une loi de probabilité donnée.
+Ils permettent de décider, avec un seuil d’erreur <span class="math inline">\(\alpha\)</span> spécifié, si les écarts présentés par l’échantillon par rapport aux valeurs théoriques attendues sont dûs au hasard ou sont au contraire significatifs.</p>
+<div id="nombre-de-sinistres" class="section level3 unnumbered hasAnchor">
+<h3>Nombre de sinistres<a href="etudestats.html#nombre-de-sinistres" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Pour faire les tests, nous allons générer une variable aléatoire <span class="math inline">\(X\)</span> suivant une loi choisie, puis tester si la somme totale des sinistres <code>SumSINAPS</code> est de même loi.</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<div id="loi-de-poisson" class="section level4 unnumbered hasAnchor">
+<h4>Loi de poisson<a href="etudestats.html#loi-de-poisson" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Dans le cas habituel théorique, le nombre de sinistres suivrait la loi de poisson ce qui nous pousse à faire ce premier test.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="etudestats.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Generer une v.a de longueur indentique a celle de SumSINAPS et suivant la loi de poisson</span></span>
 <span id="cb7-2"><a href="etudestats.html#cb7-2" aria-hidden="true" tabindex="-1"></a>X<span class="ot">=</span><span class="fu">rpois</span>(<span class="fu">length</span>(SumSINAPS),<span class="fu">mean</span>(SumSINAPS))</span>
 <span id="cb7-3"><a href="etudestats.html#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#test de poisson</span></span>
 <span id="cb7-4"><a href="etudestats.html#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ks.test</span>(SumSINAPS,X)</span></code></pre></div>
-<pre><code>## Warning in ks.test.default(SumSINAPS, X): p-value will be approximate in the
-## presence of ties</code></pre>
 <pre><code>## 
-##  Asymptotic two-sample Kolmogorov-Smirnov test
+##  Two-sample Kolmogorov-Smirnov test
 ## 
 ## data:  SumSINAPS and X
-## D = 0.061311, p-value &lt; 2.2e-16
+## D = 0.079343, p-value &lt; 2.2e-16
 ## alternative hypothesis: two-sided</code></pre>
-<p>La <span class="math inline">\(p\)</span>-<span class="math inline">\(value\)</span> est inférieure à <span class="math inline">\(0.5\)</span> donc on rejette l’hypothèse <span class="math inline">\(H_0\)</span> selon laquelle la somme des sinistres suit une loi de poisson.</p>
+<p>La <span class="math inline">\(p\)</span>-<span class="math inline">\(value\)</span> est inférieure à <span class="math inline">\(0.5\)</span> donc on rejette l’hypothèse <span class="math inline">\(H_0\)</span> selon laquelle la somme des sinistres suit une loi de poisson.
+Pour consolider cette conclusion on peut faire un test visuel avec la fonction <code>qqplot()</code>.
+Si <code>SumSINAPS</code> et <span class="math inline">\(X\)</span> suivent la même loi, alors le nuage de points doit s’apparenter à une droite.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="etudestats.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(SumSINAPS,X)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>On voit clairement que le nuage de points est loin d’être sur une même droite, ce qui conforte notre conclusion précédente.</p>
 </div>
-<div id="loi-normale" class="section level4 hasAnchor" number="1.1.1.2">
-<h4><span class="header-section-number">1.1.1.2</span> Loi normale<a href="etudestats.html#loi-normale" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>On peut tester graphiquement si une variable suit une loi normale avec la fonction <code>qqnorm</code>. Si le nuage de point s’apparente à une droite alors la variable pourrait suivre une loi normale sinon on rejette cette hypothèse.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="etudestats.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(SumSINAPS)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<p>Il est très difficile de conclure à partir d’un graphe qqnorm si une variable pourrait effectivement suivre une loi normale. D’ailleur c’est pourquoi il est préférable d’utiliser le test de normalité de Carlos Jarque et Anil K. Bera appelé Jarque–Bera test. Sur R, ce test peut être effectué avec la fonction <code>jarque.bera.test()</code> disponible dans le package <code>tseries</code>.
-<span class="math inline">\(\begin{cases}  H_0: Les\; résidus\; suivent\; une\; loi\; normale\\  H_1: Les \;résidus\; ne\; suivent\; pas\; une\; loi\; normale \end{cases}\)</span></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="etudestats.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages(&quot;tseries&quot;)</span></span>
-<span id="cb11-2"><a href="etudestats.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tseries)</span></code></pre></div>
-<pre><code>## Registered S3 method overwritten by &#39;quantmod&#39;:
-##   method            from
-##   as.zoo.data.frame zoo</code></pre>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="etudestats.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">jarque.bera.test</span>(SumSINAPS)</span></code></pre></div>
+<div id="loi-géométrique" class="section level4 unnumbered hasAnchor">
+<h4>Loi géométrique<a href="etudestats.html#loi-géométrique" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A part la loi de poisson, le nombre de sinistre pourrait suivre la loi géométrique.
+D’ailleur la densité de <code>SumSINAPS</code> que nous avons tracer a la même forme que le graphe d’une densité de la loi géométrique.</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>On peut tester graphiquement si une variable suit une loi géométrique toujours avec la même fonction <code>qqplot()</code>.
+Mais faudra trouver le paramètre <span class="math inline">\(p\)</span> de la loi loi géométrique pour pouvoir générer notre échantillon <span class="math inline">\(X\)</span>.
+Il existe un package permettant d’entrainer une donnée selon la loi loi géométrique du nom de fitdistrplus<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="etudestats.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fitdistrplus)</span>
+<span id="cb10-2"><a href="etudestats.html#cb10-2" aria-hidden="true" tabindex="-1"></a>fitSINAPS <span class="ot">&lt;-</span> <span class="fu">fitdist</span>(<span class="at">data =</span> SumSINAPS,<span class="at">distr =</span> <span class="st">&quot;geom&quot;</span>,</span>
+<span id="cb10-3"><a href="etudestats.html#cb10-3" aria-hidden="true" tabindex="-1"></a>                   <span class="at">method =</span> <span class="st">&quot;mle&quot;</span>)</span>
+<span id="cb10-4"><a href="etudestats.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fitSINAPS)</span></code></pre></div>
+<pre><code>## Fitting of the distribution &#39; geom &#39; by maximum likelihood 
+## Parameters : 
+##       estimate  Std. Error
+## prob 0.8554255 0.002564721
+## Loglikelihood:  -7767.809   AIC:  15537.62   BIC:  15545.3</code></pre>
+<p>La sortie de la fonction <code>summary</code> indique que <span class="math inline">\(p =0.8554255\)</span>, on va l’utiliser pour générer <span class="math inline">\(X\)</span> puis faire le test de <code>qqplot</code>.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="etudestats.html#cb12-1" aria-hidden="true" tabindex="-1"></a>X <span class="ot">=</span> <span class="fu">rgeom</span>(<span class="fu">length</span>(SumSINAPS),<span class="at">prob =</span><span class="fl">0.8554255</span>)</span>
+<span id="cb12-2"><a href="etudestats.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(SumSINAPS,X)</span>
+<span id="cb12-3"><a href="etudestats.html#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="dv">0</span>,<span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>Ce graphe s’apparente plus avec une droite que celui tracer dans la section précédente.
+En plus le modèle entraîné présente des valeurs empériques et théoriques très proche.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="etudestats.html#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fitSINAPS)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<blockquote>
+<p>On peut donc supposé que <span class="math inline">\(SumSINAPS\sim\mathcal{G}(p:= 0.8554255)\)</span></p>
+</blockquote>
+</div>
+</div>
+<div id="charges-de-sinistres" class="section level3 unnumbered hasAnchor">
+<h3>Charges de sinistres<a href="etudestats.html#charges-de-sinistres" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Comme nous l’avons fait précédemment, nous allons chercher le meilleur paramétré <span class="math inline">\(\mu log\)</span> et <span class="math inline">\(sdlog\)</span> pour la charge des sinistres qui suivrait une loi lognormale.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="etudestats.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fitdistrplus)</span>
+<span id="cb14-2"><a href="etudestats.html#cb14-2" aria-hidden="true" tabindex="-1"></a>Charge <span class="ot">&lt;-</span> database<span class="sc">$</span>CHARGE</span>
+<span id="cb14-3"><a href="etudestats.html#cb14-3" aria-hidden="true" tabindex="-1"></a>Charge <span class="ot">&lt;-</span> Charge[<span class="fu">which</span>(Charge<span class="sc">&gt;</span><span class="dv">0</span>)]</span>
+<span id="cb14-4"><a href="etudestats.html#cb14-4" aria-hidden="true" tabindex="-1"></a>fitCharge <span class="ot">&lt;-</span> <span class="fu">fitdistr</span>(Charge,<span class="st">&quot;log-normal&quot;</span>)</span>
+<span id="cb14-5"><a href="etudestats.html#cb14-5" aria-hidden="true" tabindex="-1"></a>fitCharge</span></code></pre></div>
+<pre><code>##     meanlog       sdlog   
+##   6.66608145   1.38553971 
+##  (0.03901768) (0.02758967)</code></pre>
+<p>Autrement dit, si la charge de sinistres suit une loi lognormale alors ce sera:<br />
+<span class="math display">\[log\mathcal{N}(6.66608145,1.38553971)\]</span> On peut faire le test de Kolmogorov-Smirnov<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> pour conforter se résultat en tenant compte de l’écart type des erreurs d’estimation de la fonction <code>fitdistr</code>.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="etudestats.html#cb16-1" aria-hidden="true" tabindex="-1"></a>estimated <span class="ot">=</span> fitCharge<span class="sc">$</span>estimate <span class="sc">+</span> fitCharge<span class="sc">$</span>sd</span>
+<span id="cb16-2"><a href="etudestats.html#cb16-2" aria-hidden="true" tabindex="-1"></a>X <span class="ot">&lt;-</span> <span class="fu">rlnorm</span>(<span class="fu">length</span>(Charge),estimated[[<span class="st">&quot;meanlog&quot;</span>]],estimated[[<span class="st">&quot;sdlog&quot;</span>]])</span>
+<span id="cb16-3"><a href="etudestats.html#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ks.test</span>(Charge,X)</span></code></pre></div>
 <pre><code>## 
-##  Jarque Bera Test
+##  Two-sample Kolmogorov-Smirnov test
 ## 
-## data:  SumSINAPS
-## X-squared = 8625.6, df = 2, p-value &lt; 2.2e-16</code></pre>
-<p>Le test précédent indique que la <span class="math inline">\(p\)</span>-<span class="math inline">\(value\)</span> est inférieure largement à <span class="math inline">\(0.5\)</span>, on rejette alors l’hypothèse <span class="math inline">\(H_0\)</span> de normalité de <code>SumSINAPS</code> avec un niveau de confiance de <span class="math inline">\(95%\)</span></p>
+## data:  Charge and X
+## D = 0.045995, p-value = 0.1388
+## alternative hypothesis: two-sided</code></pre>
+<p>La <span class="math inline">\(p-value = 0.1046&gt;\alpha=5\%\)</span> alors on rejette pas l’hypothèse <span class="math inline">\(H_0\)</span>, alors la charge de sinistres pourrait suivre la loi <span class="math inline">\(log\mathcal{N}(6.7,1.4)\)</span>.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="etudestats.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb18-2"><a href="etudestats.html#cb18-2" aria-hidden="true" tabindex="-1"></a>dfdensity <span class="ot">=</span> <span class="fu">data.frame</span>(Charge,X)</span>
+<span id="cb18-3"><a href="etudestats.html#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> dfdensity)<span class="sc">+</span></span>
+<span id="cb18-4"><a href="etudestats.html#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x=</span>Charge,<span class="at">color =</span><span class="st">&quot;blue&quot;</span>))<span class="sc">+</span></span>
+<span id="cb18-5"><a href="etudestats.html#cb18-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">x=</span>X,<span class="at">color=</span><span class="st">&quot;red&quot;</span>))<span class="sc">+</span></span>
+<span id="cb18-6"><a href="etudestats.html#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>( <span class="st">&quot;red&quot;</span>, <span class="st">&quot;blue&quot;</span>),</span>
+<span id="cb18-7"><a href="etudestats.html#cb18-7" aria-hidden="true" tabindex="-1"></a>                      <span class="at">labels=</span> <span class="fu">c</span>(<span class="st">&quot;Charge&quot;</span>,<span class="st">&quot;X&quot;</span>))<span class="sc">+</span></span>
+<span id="cb18-8"><a href="etudestats.html#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;Densités&quot;</span>,</span>
+<span id="cb18-9"><a href="etudestats.html#cb18-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">subtitle =</span> <span class="st">&quot;X a été généré aléatoirement</span><span class="sc">\n</span><span class="st">Suivant la loi loi lognormale&quot;</span>)<span class="sc">+</span></span>
+<span id="cb18-10"><a href="etudestats.html#cb18-10" aria-hidden="true" tabindex="-1"></a>  ggthemes<span class="sc">::</span><span class="fu">theme_tufte</span>()</span></code></pre></div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-18"></span>
+<img src="_main_files/figure-html/unnamed-chunk-18-1.png" alt="On peut constater que les densité de X et Charge sont presque les mêmes" width="480" />
+<p class="caption">
+Figure 1.1: On peut constater que les densité de X et Charge sont presque les mêmes
+</p>
+</div>
 
 </div>
 </div>
 </div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="https://cran.r-project.org/web/packages/fitdistrplus/index.html" class="uri">https://cran.r-project.org/web/packages/fitdistrplus/index.html</a><a href="etudestats.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test" class="uri">https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</a><a href="etudestats.html#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
@@ -287,7 +362,7 @@ Pour faire les tests, nous allons générer une variable aléatoire <span class=
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="représentations-graphiques.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="les-modèles-linéaires-généralisés.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -318,7 +393,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-intro.Rmd",
+"link": "https://github.com/AODiakite/Tarification/edit/master/01-stats.Rmd",
 "text": "Edit"
 },
 "history": {

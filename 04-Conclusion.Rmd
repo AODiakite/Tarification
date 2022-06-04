@@ -1,0 +1,3 @@
+# Conclusion{-}
+
+Tout au long de ce projet, de différentes manières, nous avons pu modéliser le nombre et la sévérité des sinistres. On a commencer par une étude statistiques qui nous a permis de trouver des lois adéquates aux nombres et montants de sinistres. Par des modèles linéaires généralisés, il est aussi possible de tarifier des contrats d'assurance de ce type.

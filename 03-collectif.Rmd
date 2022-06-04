@@ -1,0 +1,39 @@
+# Modèle collectif
+```{r message=FALSE, warning=FALSE,echo=FALSE,eval=TRUE}
+library(ggplot2)
+library(dplyr)
+library(magrittr)
+library(haven)
+database <- read_sas("Data/base5.sas7bdat", 
+    NULL)
+database$SumSINAPS <- database[,c("SINAP1","SINAP2", "SINAP3", "SINAP4" ,"SINAP5", "SINAP6")]%>%
+                                  apply(., 1, sum)
+# Transformation des données
+database <-  database %>% mutate(SumSINAPS = case_when(CHARGE==0~0,
+                                            TRUE~SumSINAPS)) %>% 
+                       mutate(CHARGE = case_when(SumSINAPS==0~0,
+                                                 SumSINAPS>0~abs(CHARGE),
+                                                 TRUE~0))
+SumSINAPS=database$SumSINAPS
+Charge =database$CHARGE
+```
+
+Dans ce projet, on a trouver les lois que pourraient suivre la charge de sinistres($X$) ainsi que le nombre de sinistres ($N$). On sait que la charge total de sinistres $S$ vaut :\
+$$S =\sum\limits_{i=0}^{N}X_i$$
+
+Donc on peut écrire :\
+$$\mathbb{E}(S)=\mathbb{E}(N)\times\mathbb{E}(X)$$
+Or $N\sim\mathcal{G}(p:=0.8554255)$ et $X~log\mathcal{N}(6.66608145,1.38553971)$ alors:\
+
+$$\mathbb{E}(N) = 1/p = 1.169009\;\;\mathbb{E}(X) =\exp(\mu+\frac{\sigma^2}{2}) = 2050.71$$
+
+d'où $\mathbb{E}(S) = 2050.71\times1.169009 = 2397.298$.
+Cette dernière correspond à la prime pure que devrait payer un assureur, on peut constater qu'elle est très proche de la moyenne empirique des Charge de sinistres de la base de données dont nous disposons.
+
+```{r}
+cat("Prime pure=",2397.298,";","mean(Charge)=",mean(Charge))
+```
+
+
+
+
