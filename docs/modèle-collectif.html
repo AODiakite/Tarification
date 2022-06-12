@@ -23,7 +23,7 @@
 <meta name="author" content="Abdoul Oudouss DIAKITE, Othmane ETTADLAOUI" />
 
 
-<meta name="date" content="2022-06-04" />
+<meta name="date" content="2022-06-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -148,6 +148,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2" data-path="etudestats.html"><a href="etudestats.html#représentations-graphiques"><i class="fa fa-check"></i><b>1.2</b> Représentations graphiques</a></li>
 <li class="chapter" data-level="1.3" data-path="etudestats.html"><a href="etudestats.html#tests-statistiques"><i class="fa fa-check"></i><b>1.3</b> Tests statistiques</a>
 <ul>
+<li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#estimation-par-la-méthode-du-maximum-de-vraisembance."><i class="fa fa-check"></i>Estimation par la méthode du maximum de vraisembance.</a></li>
 <li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#nombre-de-sinistres"><i class="fa fa-check"></i>Nombre de sinistres</a></li>
 <li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#charges-de-sinistres"><i class="fa fa-check"></i>Charges de sinistres</a></li>
 </ul></li>
@@ -189,8 +190,8 @@ Or <span class="math inline">\(N\sim\mathcal{G}(p:=0.8554255)\)</span> et <span 
 <p><span class="math display">\[\mathbb{E}(N) = 1/p = 1.169009\;\;\mathbb{E}(X) =\exp(\mu+\frac{\sigma^2}{2}) = 2050.71\]</span></p>
 <p>d’où <span class="math inline">\(\mathbb{E}(S) = 2050.71\times1.169009 = 2397.298\)</span>.
 Cette dernière correspond à la prime pure que devrait payer un assureur, on peut constater qu’elle est très proche de la moyenne empirique des Charge de sinistres de la base de données dont nous disposons.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="modèle-collectif.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Prime pure=&quot;</span>,<span class="fl">2397.298</span>,<span class="st">&quot;;&quot;</span>,<span class="st">&quot;mean(Charge)=&quot;</span>,<span class="fu">mean</span>(Charge))</span></code></pre></div>
-<pre><code>## Prime pure= 2397.298 ; mean(Charge)= 170.101</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="modèle-collectif.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Prime pure=&quot;</span>,<span class="fl">2397.298</span>,<span class="st">&quot;;&quot;</span>,<span class="st">&quot;mean(Charge)=&quot;</span>,<span class="fu">mean</span>(Charge))</span></code></pre></div>
+<pre><code>## Prime pure= 2397.298 ; mean(Charge)= 2169.361</code></pre>
 
 </div>
             </section>

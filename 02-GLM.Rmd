@@ -44,7 +44,11 @@ comparemodel <-  performance::compare_performance(regNId,regPId,regPlog)
 comparemodel[,c("Name","AIC","AIC_wt","BIC")]
 ```
 
-Sous le critère de l'AIC et du BIC on peut choisir le modèle `regPlog` c'est à dire celui qui a pour fonction de lien _logpoisson_.
+Sous le critère de l'AIC et du BIC on peut choisir le modèle `regPlog` c'est à dire celui qui a pour fonction de lien _logpoisson_.\
+```{r echo=FALSE}
+plot(comparemodel)
+```
+
 
 ## Régression logistique ou probit{-}
 

@@ -16,6 +16,7 @@ database <-  database %>% mutate(SumSINAPS = case_when(CHARGE==0~0,
                                                  TRUE~0))
 SumSINAPS=database$SumSINAPS
 Charge =database$CHARGE
+Charge = Charge[which(Charge>0)]
 ```
 
 Dans ce projet, on a trouver les lois que pourraient suivre la charge de sinistres($X$) ainsi que le nombre de sinistres ($N$). On sait que la charge total de sinistres $S$ vaut :\

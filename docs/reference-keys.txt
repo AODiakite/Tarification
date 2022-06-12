@@ -1,6 +1,6 @@
-tab:unnamed-chunk-1
 tab:unnamed-chunk-2
-fig:unnamed-chunk-18
+tab:unnamed-chunk-3
+fig:unnamed-chunk-19
 objectif
 les-données-du-projets
 description-des-données

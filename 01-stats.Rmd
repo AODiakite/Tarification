@@ -88,7 +88,28 @@ On peut utiliser ce même raisonnement pour interpréter tous les autres graphes
 
 Nous allons faire des tests statistiques histoire de connaître quelle loi suit la somme totale des sinistres `SumSINAPS`.
 Les tests d'adéquation servent à tester si un échantillon est distribué selon une loi de probabilité donnée.
-Ils permettent de décider, avec un seuil d'erreur $\alpha$ spécifié, si les écarts présentés par l'échantillon par rapport aux valeurs théoriques attendues sont dûs au hasard ou sont au contraire significatifs.
+Ils permettent de décider, avec un seuil d'erreur $\alpha$ spécifié, si les écarts présentés par l'échantillon par rapport aux valeurs théoriques attendues sont dus au hasard ou sont au contraire significatifs.
+
+### Estimation par la méthode du maximum de vraisembance.{-}
+
+Soit $X$ une variable aléatoire réelle de loi discrète ou continue dont on veut estimer le paramétre $\theta$. Alors on définit une fonction $f$ telle que:\
+$$f(x;\theta) = \begin{cases}
+    f_\theta(x) : si\; X\;variable\; aléatoire\; continue \\
+    P_\theta(X=x) : si\; X\;variable\; aléatoire\; discrète
+\end{cases}$$
+
+On appelle fonction de vraisemblance de $\theta$ pour une réalisation $(x_1,\dots,x_n)$ d’un échantillon, la fonction de $\theta$:\
+$$L(x_1,\dots,x_n;\theta)=f(x_1,\dots,x_n;\theta)=\prod\limits_{i=1}^{n}f(x;\theta)$$
+
+La méthode consiste à estimer $\theta$ par la valeur qui maximise $L$, cette méthode s'appelle méthode du maximum de vraisemblance($MLE$^[MLE : _Maximum likelihood estimation_]), on choisit la valeur $\theta$ qui réalise le maximum de $L(x_1,\dots,x_n;\theta)$. Pour cela on cherche $\theta$ telle que:\
+$$\frac{\partial L}{\partial \theta}=0 \;\; et\;\; \frac{\partial^2 L}{\partial \theta^2}\leq 0$$
+
+On passe en général au logarithme, c'est à dire on cherche $\theta$ telle que:\
+$$\frac{\partial\big(ln(L)\big)}{\partial \theta}=0 \;\; et\;\; \frac{\partial^2 \big(ln(L)\big)}{\partial \theta^2}\leq 0$$
+
+
+
+
 
 ### Nombre de sinistres {.unnumbered}
 
@@ -122,7 +143,6 @@ On voit clairement que le nuage de points est loin d'être sur une même droite,
 
 #### Loi géométrique {.unnumbered}
 
-
 A part la loi de poisson, le nombre de sinistre pourrait suivre la loi géométrique.
 D'ailleur la densité de `SumSINAPS` que nous avons tracer a la même forme que le graphe d'une densité de la loi géométrique.
 
@@ -133,7 +153,7 @@ plot(density(rgeom(16082,0.7)),main = "Densité de la loi géométrique",
 
 On peut tester graphiquement si une variable suit une loi géométrique toujours avec la même fonction `qqplot()`.
 Mais faudra trouver le paramètre $p$ de la loi loi géométrique pour pouvoir générer notre échantillon $X$.
-Il existe un package permettant d'entrainer une donnée selon la loi loi géométrique du nom de fitdistrplus[^1].
+Il existe un package permettant d’entraîner une donnée selon la loi loi géométrique du nom de fitdistrplus[^1] afin de trouver l'estimateur du paramètre $p$ par la méthode du maximum de vraisemblance.
 
 [^1]: <https://cran.r-project.org/web/packages/fitdistrplus/index.html>
 
@@ -163,7 +183,7 @@ plot(fitSINAPS)
 
 ### Charges de sinistres {.unnumbered}
 
-Comme nous l'avons fait précédemment, nous allons chercher le meilleur paramétré $\mu log$ et $sdlog$ pour la charge des sinistres qui suivrait une loi lognormale.
+Comme nous l'avons fait précédemment, nous allons chercher le meilleur paramétré $\mu log$ et $sdlog$ par la méthode $MLE$ pour la charge des sinistres qui suivrait une loi lognormale.
 
 ```{r}
 library(fitdistrplus)

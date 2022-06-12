@@ -15,7 +15,7 @@ github-repo: rstudio/bookdown-demo
 
 # Introduction{-}
 
-L'assurance est une opération de risque d'un assuré à un assureur.
+L'assurance est une opération de transfert d'un risque ou d'une partie d'un risque d'un assuré à un assureur.
 Cette opération de transfert se fait par un paiement de prime par l'assuré à l'assureur.
 Ce dernier s'engage à indemniser son client en cas de survenance d'un sinistre pendant toute la période couverte par le contrat.
 La prime reçue par l'assureur doit refléter le risque qu'il est prêt à couvrir d'où la nécessité de se demander combien faut-il recevoir en prime pour assurer $\lambda$ niveau de risque ?
@@ -32,15 +32,18 @@ Cette base de données contient 16082 images d'une assurance automobile.
 ([*Télécharger*](https://github.com/AODiakite/Tarification/blob/master/data/base5.sas7bdat)).
 Le code suivant permet de charger les données qui se trouvaient au préalable dans le dossier *Data*.
 
-```{r,echo=FALSE}
+```{r}
 library(haven)
 database <- read_sas("Data/base5.sas7bdat", 
     NULL)
+```
+```{r echo=FALSE}
 knitr::kable(
   head(database[,1:8], 10), booktabs = TRUE,
   caption = 'A table of the first 10 rows of our data.'
 )
 ```
+
 
 ## Description des données
 

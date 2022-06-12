@@ -23,7 +23,7 @@
 <meta name="author" content="Abdoul Oudouss DIAKITE, Othmane ETTADLAOUI" />
 
 
-<meta name="date" content="2022-06-04" />
+<meta name="date" content="2022-06-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -148,6 +148,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2" data-path="etudestats.html"><a href="etudestats.html#représentations-graphiques"><i class="fa fa-check"></i><b>1.2</b> Représentations graphiques</a></li>
 <li class="chapter" data-level="1.3" data-path="etudestats.html"><a href="etudestats.html#tests-statistiques"><i class="fa fa-check"></i><b>1.3</b> Tests statistiques</a>
 <ul>
+<li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#estimation-par-la-méthode-du-maximum-de-vraisembance."><i class="fa fa-check"></i>Estimation par la méthode du maximum de vraisembance.</a></li>
 <li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#nombre-de-sinistres"><i class="fa fa-check"></i>Nombre de sinistres</a></li>
 <li class="chapter" data-level="" data-path="etudestats.html"><a href="etudestats.html#charges-de-sinistres"><i class="fa fa-check"></i>Charges de sinistres</a></li>
 </ul></li>
@@ -181,11 +182,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">La tarification a priori</h1>
 <p class="author"><em>Abdoul Oudouss DIAKITE, Othmane ETTADLAOUI</em></p>
-<p class="date"><em>2022-06-04</em></p>
+<p class="date"><em>2022-06-12</em></p>
 </div>
 <div id="introduction" class="section level1 unnumbered hasAnchor">
 <h1>Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>L’assurance est une opération de risque d’un assuré à un assureur.
+<p>L’assurance est une opération de transfert d’un risque ou d’une partie d’un risque d’un assuré à un assureur.
 Cette opération de transfert se fait par un paiement de prime par l’assuré à l’assureur.
 Ce dernier s’engage à indemniser son client en cas de survenance d’un sinistre pendant toute la période couverte par le contrat.
 La prime reçue par l’assureur doit refléter le risque qu’il est prêt à couvrir d’où la nécessité de se demander combien faut-il recevoir en prime pour assurer <span class="math inline">\(\lambda\)</span> niveau de risque ?</p>
@@ -200,8 +201,11 @@ Bien sûr nous allons commencer par une étude statistique de nos données ainsi
 <p>Cette base de données contient 16082 images d’une assurance automobile.
 (<a href="https://github.com/AODiakite/Tarification/blob/master/data/base5.sas7bdat"><em>Télécharger</em></a>).
 Le code suivant permet de charger les données qui se trouvaient au préalable dans le dossier <em>Data</em>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
+<span id="cb1-2"><a href="index.html#cb1-2" aria-hidden="true" tabindex="-1"></a>database <span class="ot">&lt;-</span> <span class="fu">read_sas</span>(<span class="st">&quot;Data/base5.sas7bdat&quot;</span>, </span>
+<span id="cb1-3"><a href="index.html#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cn">NULL</span>)</span></code></pre></div>
 <table>
-<caption><span id="tab:unnamed-chunk-1">Table 0.1: </span>A table of the first 10 rows of our data.</caption>
+<caption><span id="tab:unnamed-chunk-2">Table 0.1: </span>A table of the first 10 rows of our data.</caption>
 <thead>
 <tr class="header">
 <th align="right">NAP</th>
@@ -324,7 +328,7 @@ Le code suivant permet de charger les données qui se trouvaient au préalable d
 Ne vous inquiétez surtout pas !
 Le tableau suivant contient la <a href="https://github.com/AODiakite/Tarification/blob/master/data/D%C3%A9tails%20des%20variables.xls">description</a> de chaque colonne de la base 5 que nous appellerons dorénavant <strong><em>database</em></strong>.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-2">Table 0.2: </span>Descriptions de database.</caption>
+<caption><span id="tab:unnamed-chunk-3">Table 0.2: </span>Descriptions de database.</caption>
 <colgroup>
 <col width="89%" />
 <col width="10%" />
